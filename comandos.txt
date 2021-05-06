@@ -1,0 +1,14 @@
+
+yum install net-tools
+yum install 
+yum install 
+ 
+yum install wget
+
+sudo hamachi login
+#colocamos nuestro correo con el que nos registramos
+sudo hamachi set-nick <nombrecliente>
+sudo hamachi attach <correoregistramos>
+
+#unirse al link del server
+sudo hamachi join 451-401-034
