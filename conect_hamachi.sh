@@ -21,4 +21,4 @@ read -p "email Register: " email;
 sudo hamachi attach $email
 	
 #unirse al link del server
-sudo hamachi join 451-401-034
+sudo hamachi join 451-410-513
