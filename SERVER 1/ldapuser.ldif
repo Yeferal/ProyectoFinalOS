@@ -1,0 +1,16 @@
+dn: uid=USER_CLIENT,ou=People,dc=example,dc=com
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: USER_CLIENT
+uid: USER_CLIENT
+uidNumber: 1005
+gidNumber: 1005
+homeDirectory: /home/USER_CLIENT
+userPassword: {SSHA}PASSWORD_HERE
+loginShell: /bin/bash
+gecos: USER_CLIENT
+shadowLastChange: 0
+shadowMax: 0
+shadowWarning: 0
