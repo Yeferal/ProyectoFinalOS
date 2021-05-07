@@ -12,7 +12,7 @@ useradd -r -M -d /var/lib/openldap -u 55 -s /usr/sbin/nologin ldap
 
 #Descargar OpenLDAP Source Tarball
 echo 'VER = 2.4.58';
-VER = 2.4.58
+VER='2.4.58'
 
 echo 'wget ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-$VER.tgz';
 wget ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-$VER.tgz
