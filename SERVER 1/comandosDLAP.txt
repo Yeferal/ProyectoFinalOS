@@ -1,0 +1,5 @@
+ 
+
+ sudo dnf update
+
+ dnf install cyrus-sasl-devel make libtool autoconf libtool-ltdl-devel openssl-devel libdb-devel tar gcc perl perl-devel wget vim
