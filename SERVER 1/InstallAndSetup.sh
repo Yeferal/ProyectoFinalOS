@@ -11,19 +11,19 @@ echo 'useradd -r -M -d /var/lib/openldap -u 55 -s /usr/sbin/nologin ldap';
 useradd -r -M -d /var/lib/openldap -u 55 -s /usr/sbin/nologin ldap
 
 #Descargar OpenLDAP Source Tarball
-echo 'VER = 2.4.58';
-VER='2.4.58'
+echo 'VER=2.4.48';
+VER='2.4.48'
 
-echo 'wget ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-$VER.tgz';
+echo 'wget ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-'$VER'.tgz';
 wget ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-$VER.tgz
 
 #Extraiga el código fuente de OpenLDAP Tarball
-echo 'tar xzf openldap-$VER.tgz';
+echo 'tar xzf openldap-'$VER'.tgz';
 tar xzf openldap-$VER.tgz
 
 #Compilar OpenLDAP
 #accedemos a la carpeta para compilar
-echo 'cd openldap-$VER';
+echo 'cd openldap-'$VER;
 cd openldap-$VER
 
 echo 'Listo';
