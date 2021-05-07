@@ -21,6 +21,9 @@ wget ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-$VER.tgz
 echo 'tar xzf openldap-'$VER'.tgz';
 tar xzf openldap-$VER.tgz
 
+#compiamos el archivo de compilacion
+#cp compiLDAP.sh openldap-2.4.48
+
 #Compilar OpenLDAP
 #accedemos a la carpeta para compilar
 echo 'cd openldap-'$VER;

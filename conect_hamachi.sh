@@ -17,8 +17,8 @@ echo 'sudo hamachi set-nick '$nombrecliente;
 sudo hamachi set-nick $nombrecliente
 
 # correo de registro
-read -p "email Register: " email;
+read -p "Ingrese su correo electronico LogMeIn: " email;
 sudo hamachi attach $email
 	
 #unirse al link del server
-sudo hamachi join 451-410-513
+#sudo hamachi join 451-410-513

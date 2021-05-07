@@ -1,7 +1,7 @@
 
 yum install net-tools
-yum install 
-yum install 
+yum install git
+yum install nano
  
 yum install wget
 
