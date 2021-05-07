@@ -13,8 +13,8 @@ sleep 1m
 
 #cree un archivo LDIF ( ldaprootpasswd.ldif ) que se usa para 
 #agregar una entrada al directorio LDAP.
-echo 'sudo vim ldaprootpasswd.ldif';
-sudo vim ldaprootpasswd.ldif
+echo 'sudo nano ldaprootpasswd.ldif';
+sudo nano ldaprootpasswd.ldif
 
 
 #agregue la entrada LDAP correspondiente especificando el URI 

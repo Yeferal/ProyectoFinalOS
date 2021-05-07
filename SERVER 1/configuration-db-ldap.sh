@@ -21,8 +21,8 @@ sudo ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/inetorgperson.ldif
 
 #Ahora agregue su dominio a la base de datos LDAP y cree un 
 #archivo llamado ldapdomain.ldif para su dominio.
-echo 'sudo vim ldapdomain.ldif ';
-sudo vim ldapdomain.ldif 
+echo 'sudo nano ldapdomain.ldif ';
+sudo nano ldapdomain.ldif 
 
 #agregue la configuración anterior a la base de datos LDAP con el siguiente comando.
 echo 'sudo ldapmodify -Y EXTERNAL -H ldapi:/// -f ldapdomain.ldif';
@@ -30,8 +30,8 @@ sudo ldapmodify -Y EXTERNAL -H ldapi:/// -f ldapdomain.ldif
 
 #En este paso, debemos agregar algunas entradas a nuestro 
 #directorio LDAP . Cree otro archivo llamado baseldapdomain.ldif 
-echo 'sudo vim baseldapdomain.ldif';
-sudo vim baseldapdomain.ldif
+echo 'sudo nano baseldapdomain.ldif';
+sudo nano baseldapdomain.ldif
 
 #agregue las entradas al directorio LDAP.
 echo 'sudo ldapadd -Y EXTERNAL -x -D cn=Manager,dc=example,dc=com -W -f baseldapdomain.ldif';
@@ -45,8 +45,8 @@ read -p "Ingrese la contraseña para el usuario: " contrasenia;
 sudo passwd $contrasenia
 
 #cree las definiciones para un grupo LDAP en un archivo llamado ldapgroup.ldif
-echo 'sudo vim ldapgroup.ldif';
-sudo vim ldapgroup.ldif
+echo 'sudo nano ldapgroup.ldif';
+sudo nano ldapgroup.ldif
 
 echo 'sudo ldapadd -Y EXTERNAL -x  -W -D "cn=Manager,dc=example,dc=com" -f ldapgroup.ldif';
 sudo ldapadd -Y EXTERNAL -x  -W -D "cn=Manager,dc=example,dc=com" -f ldapgroup.ldif
@@ -54,8 +54,8 @@ sudo ldapadd -Y EXTERNAL -x  -W -D "cn=Manager,dc=example,dc=com" -f ldapgroup.l
 #cree otro archivo LDIF llamado ldapuser.ldif y 
 #agregue las definiciones para el usuario creado
 #debe agregar su contrasenia cifrada
-echo 'sudo vim ldapuser.ldif';
-sudo vim ldapuser.ldif
+echo 'sudo nano ldapuser.ldif';
+sudo nano ldapuser.ldif
 
 #cargue la configuración en el directorio LDAP.
 echo 'ldapadd -Y EXTERNAL  -x -D cn=Manager,dc=example,dc=com -W -f  ldapuser.ldif';
