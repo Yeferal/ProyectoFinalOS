@@ -1,7 +1,7 @@
 #Paso 1: Instalar el servidor LDAP
 
 #instalacion en caso de pedir contrasenia agreguela
-echo 'sudo yum install openldap openldap-servers';
+echo 'sudo yum install openldap openldap-servers openldap-clients';
 sudo yum install openldap openldap-servers 
 
 #en centos 7: los siguientes comandos son para iniciar el
