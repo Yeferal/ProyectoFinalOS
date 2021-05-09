@@ -2,6 +2,8 @@
 yum install net-tools
 yum install git
 yum install nano
+yum install vim
+yum install gcc gcc-c++ autoconf automake
  
 yum install wget
 
