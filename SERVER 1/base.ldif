@@ -1,0 +1,17 @@
+dn: dc=proy-so,dc=com
+dc: proy-so
+objectClass: top
+objectClass: domain
+
+dn: cn=admin ,dc=proy-so,dc=com
+objectClass: organizationalRole
+cn: admin
+description: LDAP Manager
+
+dn: ou=People,dc=proy-so,dc=com
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Group,dc=proy-so,dc=com
+objectClass: organizationalUnit
+ou: Group
