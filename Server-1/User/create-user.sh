@@ -2,7 +2,7 @@
 
 read -p "Ingrese el nombre del usuario: " user;
 touch $user.ldif
-echo "dn: uid=$user,ou=People,dc=proy-so,dc=com
+echo "dn: uid=$user,ou=People,dc=apex,dc=com
 objectClass: top
 objectClass: account
 objectClass: posixAccount
@@ -22,8 +22,7 @@ else
 fi 
 
 slappasswd >> passwd.txt
-#
-#echo "$mypass" >> passwd.txt
+
 
 while IFS= read -r line
    do
@@ -53,15 +52,15 @@ else
    echo "1000" >> count-user.txt
 fi 
 
+#echo "uidNumber: $count 
+#gidNumber: $count
+
 echo "uidNumber: $count
-gidNumber: $count
+gidNumber: 100
 homeDirectory: /home/$user" >> $user.ldif
 
 read -p "Password LDAP: " mypass;
-ldapadd -f $user.ldif -D cn=admin,dc=proy-so,dc=com -w $mypass
+ldapadd -f $user.ldif -D cn=admin,dc=apex,dc=com -w $mypass
 
-ldappasswd -s $pass -W -D "cn=admin,dc=proy-so,dc=com" -x "uid=$user,ou=People,dc=proy-so,dc=com"
 echo "Usuario Agregado"
-
-
-
+ 

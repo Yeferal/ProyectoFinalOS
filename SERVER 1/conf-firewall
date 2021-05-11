@@ -1,4 +1,0 @@
-#!/bin/bash
-
-firewall-cmd --permanent --add-service=ldap
-firewall-cmd --reload

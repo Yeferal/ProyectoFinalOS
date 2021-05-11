@@ -1,17 +1,17 @@
-dn: dc=proy-so,dc=com
-dc: proy-so
+dn: dc=apex,dc=com
+dc: apex
 objectClass: top
 objectClass: domain
 
-dn: cn=admin ,dc=proy-so,dc=com
+dn: cn=admin ,dc=apex,dc=com
 objectClass: organizationalRole
 cn: admin
 description: LDAP Manager
 
-dn: ou=People,dc=proy-so,dc=com
+dn: ou=People,dc=apex,dc=com
 objectClass: organizationalUnit
 ou: People
 
-dn: ou=Group,dc=proy-so,dc=com
+dn: ou=Group,dc=apex,dc=com
 objectClass: organizationalUnit
 ou: Group

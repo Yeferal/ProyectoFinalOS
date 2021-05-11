@@ -11,9 +11,9 @@ else
    touch passwd.txt
 fi 
 
+echo "slappasswd";
 slappasswd >> passwd.txt
 
-#echo "$mypass" >> passwd.txt
 
 while IFS= read -r line
    do
@@ -22,6 +22,10 @@ while IFS= read -r line
    
 echo "olcRootPW: $pass" >> db.ldif
 
+echo "ldapmodify -Y EXTERNAL  -H ldapi:/// -f db.ldif";
 ldapmodify -Y EXTERNAL  -H ldapi:/// -f db.ldif
-
+echo "ldapmodify -Y EXTERNAL  -H ldapi:/// -f permiss-modify.ldif";
+ldapmodify -Y EXTERNAL  -H ldapi:/// -f permiss-modify.ldif
+echo "ldapmodify -Y EXTERNAL  -H ldapi:/// -f monitor.ldif";
 ldapmodify -Y EXTERNAL  -H ldapi:/// -f monitor.ldif
+ 
