@@ -48,7 +48,7 @@ then
    echo $count | tee count-user.txt
 else
    touch count-user.txt
-   count=1000
+   count=1020
    echo "1000" >> count-user.txt
 fi 
 
