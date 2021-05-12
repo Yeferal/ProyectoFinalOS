@@ -49,7 +49,7 @@ then
 else
    touch count-user.txt
    count=1020
-   echo "1000" >> count-user.txt
+   echo "1020" >> count-user.txt
 fi 
 
 #echo "uidNumber: $count 
